@@ -9,7 +9,7 @@ This adds a special twist to the usual dynamic of Among Us - you now have to be 
 - One player will get a private message in chat saying that they'll probably be the Jester.
 
   <details> 
-  <summary>Click here the notification the Jester will get</summary>
+  <summary><i>Click here to see the notification the Jester gets</i></summary>
    <img src="https://github.com/Maartii/Jester/blob/main/Screenshots/JesterAnnouncement.png" width="500"> 
 </details>
 
@@ -19,7 +19,7 @@ This adds a special twist to the usual dynamic of Among Us - you now have to be 
 - If this happens all the other players lose, so players have to be careful to not vote the Jester.
 
   <details> 
-  <summary>Click here to see what the victory screen looks like when the Jester wins</summary>
+  <summary><i>Click here to see what the victory screen looks like when the Jester wins</i></summary>
    <img src="https://github.com/Maartii/Jester/blob/main/Screenshots/JesterWin.png" width="500"> 
 </details>
 
@@ -27,7 +27,7 @@ This adds a special twist to the usual dynamic of Among Us - you now have to be 
 - After a game, all players get a notification saying who had the Jester role (and if they won).
 
   <details> 
-  <summary>Click here to see the after-game message</summary>
+  <summary><i>Click here to see the after-game message</i></summary>
    <img src="https://github.com/Maartii/Jester/blob/main/Screenshots/AfterGame.png" width="500"> 
 </details>
 
