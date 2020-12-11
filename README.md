@@ -29,4 +29,4 @@ This adds a special twist to the usual dynamic of Among Us - you now have to be 
 ## Donate
 
 - If you appreciate the plugin and want to buy me a free coffee, you can. :)
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZPDMYAHEHSZAY)
+[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=ZPDMYAHEHSZAY&currency_code=EUR)
