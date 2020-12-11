@@ -28,6 +28,8 @@ This adds a special twist to the usual dynamic of Among Us - you now have to be 
    <img src="https://github.com/Maartii/Jester/blob/main/Screenshots/AfterGame.png" width="500"> 
 </details>
 
+- While in lobby, the host can use the `/jester on` and `/jester off` commands to turn the jester role on and off. Players can use the `/help` command to get an explanation about the plugin.
+
 ## Installation
 
 1. Set up an [Impostor server](https://github.com/Impostor/Impostor) by following the instructions on their Github page.
