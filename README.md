@@ -14,16 +14,14 @@ This adds a special twist to the usual dynamic of Among Us - you now have to be 
 </details>
 
 - If this player is Imposter, there will be *no Jester* this game.
-- ...but if this player is a crewmate, they will have the special **Jester** role this game.
-- In addition the ways in which a normal crewmate can win, the Jester can win by getting voted out after a meeting.
-- If this happens all the other players lose, so players have to be careful to not vote the Jester.
+- ...but if this player is a crewmate, they will also have the special **Jester** role this game.
+- In addition the ways in which a normal crewmate can win, the Jester can win on their own by getting voted out.
 
   <details> 
   <summary><i>Click here for screenshot</i></summary>
    <img src="https://github.com/Maartii/Jester/blob/main/Screenshots/JesterWin.png" width="500"> 
 </details>
 
-- Except for this extra way to win games, the Jester has the same capabilities as a normal crewmate.
 - After a game, all players get a notification saying who had the Jester role (and if they won).
 
   <details> 
