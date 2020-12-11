@@ -19,7 +19,7 @@ This adds a special twist to the usual dynamic of Among Us - you now have to be 
 2. Find the latest release of the plugin. TODO: ADD LINK HERE
 3. Drop the Jester.dll file in the `plugin` folder of your Impostor server.
 4. To play on your private server, see the instructions on the [Impostor](https://github.com/Impostor/Impostor) page.
-5. Don't forget to open chat before you start a game! :)
+5. Don't forget to open chat before you start a game! :wink:
 
 ## Credits
 
@@ -29,4 +29,4 @@ This adds a special twist to the usual dynamic of Among Us - you now have to be 
 ## Donate
 
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=ZPDMYAHEHSZAY&currency_code=EUR)
-If you like the plugin and want to donate, you can. I appreciate it!
+If you enjoy the plugin and want to donate some money, you can. I appreciate it! :)
