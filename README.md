@@ -8,19 +8,28 @@ This adds a special twist to the usual dynamic of Among Us - you now have to be 
 - When the hosts pushes the 'start' button in the lobby, every player has to **open the ingame chat**.
 - One player will get a private message in chat saying that they'll probably be the Jester.
 
-![Notification](Screenshots/JesterAnnouncement.png)
+  <details> 
+  <summary>Click here the notification the Jester will get</summary>
+   <img src="https://github.com/Maartii/Jester/blob/main/Screenshots/JesterAnnouncement.png" width="500"> 
+</details>
 
 - If this player is Imposter, there will be *no Jester* this game.
 - ...but if this player is a crewmate, they will have the special **Jester** role this game.
 - In addition the ways in which a normal crewmate can win, the Jester can win by getting voted out after a meeting.
 - If this happens all the other players lose, so players have to be careful to not vote the Jester.
-- Except for this extra way to win games, the Jester has the same capabilities as a normal crewmate.
 
-<details> 
-  <summary>Q1: What is the best Language in the World? </summary>
-   A1: JavaScript 
+  <details> 
+  <summary>Click here to see what the victory screen looks like when the Jester wins</summary>
+   <img src="https://github.com/Maartii/Jester/blob/main/Screenshots/JesterWin.png" width="500"> 
 </details>
 
+- Except for this extra way to win games, the Jester has the same capabilities as a normal crewmate.
+- After a game, all players get a notification saying who had the Jester role (and if they won).
+
+  <details> 
+  <summary>Click here to see the after-game message</summary>
+   <img src="https://github.com/Maartii/Jester/blob/main/Screenshots/AfterGame.png" width="500"> 
+</details>
 
 ## Installation
 
