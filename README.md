@@ -8,7 +8,7 @@ This adds a special twist to the usual dynamic of Among Us - you now have to be 
 - When the hosts pushes the 'start' button in the lobby, every player has to **open the ingame chat**.
 - One player will get a private message in chat saying that they'll probably be the Jester.
 
-![Notification](Screenshots/JesterAnnouncement.png) 
+![Notification](Screenshots/JesterAnnouncement.png){:height="36px" width="36px"} 
 
 - If this player is Imposter, there will be *no Jester* this game.
 - ...but if this player is a crewmate, they will have the special **Jester** role this game.
