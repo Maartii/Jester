@@ -1,0 +1,64 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Tijs\\Documents\\AmongUsProject\\Jester\\Jester\\Jester.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Tijs\\Documents\\AmongUsProject\\Jester\\Jester\\Jester.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Tijs\\Documents\\AmongUsProject\\Jester\\Jester\\Jester.csproj",
+        "projectName": "Jester",
+        "projectPath": "C:\\Users\\Tijs\\Documents\\AmongUsProject\\Jester\\Jester\\Jester.csproj",
+        "packagesPath": "C:\\Users\\Tijs\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Tijs\\Documents\\AmongUsProject\\Jester\\Jester\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Tijs\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "dependencies": {
+            "Impostor.Api": {
+              "target": "Package",
+              "version": "[1.2.2-ci.116, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.404\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+C:\Users\Tijs\Documents\AmongUsProject\Jester\Jester\bin\Debug\netstandard2.1\Jester.deps.json
+C:\Users\Tijs\Documents\AmongUsProject\Jester\Jester\bin\Debug\netstandard2.1\Jester.dll
+C:\Users\Tijs\Documents\AmongUsProject\Jester\Jester\bin\Debug\netstandard2.1\Jester.pdb
+C:\Users\Tijs\Documents\AmongUsProject\Jester\Jester\obj\Debug\netstandard2.1\Jester.csprojAssemblyReference.cache
+C:\Users\Tijs\Documents\AmongUsProject\Jester\Jester\obj\Debug\netstandard2.1\Jester.AssemblyInfoInputs.cache
+C:\Users\Tijs\Documents\AmongUsProject\Jester\Jester\obj\Debug\netstandard2.1\Jester.AssemblyInfo.cs
+C:\Users\Tijs\Documents\AmongUsProject\Jester\Jester\obj\Debug\netstandard2.1\Jester.csproj.CoreCompileInputs.cache
+C:\Users\Tijs\Documents\AmongUsProject\Jester\Jester\obj\Debug\netstandard2.1\Jester.dll
+C:\Users\Tijs\Documents\AmongUsProject\Jester\Jester\obj\Debug\netstandard2.1\Jester.pdb
