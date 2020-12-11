@@ -38,7 +38,7 @@ This adds a special twist to the usual dynamic of Among Us - you now have to be 
 
 ## Credits
 
-- All the developers and contributors to the [Impostor project](https://github.com/Impostor/Impostor)
+- All the developers and contributors to the [Impostor](https://github.com/Impostor/Impostor) project.
 - And a huge thanks to all of my friends who helped test this plugin! 
 
 ## Donate
