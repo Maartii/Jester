@@ -1,7 +1,7 @@
 # Jester
 *Jester* is a plugin for the Among Us private server [Impostor](https://github.com/Impostor/Impostor) that adds a special Jester-role to the game. If the Jester gets voted out during a meeting the Jester wins and all other players lose. 
 
-This adds a special twist to the usual dynamic of Among Us - you now have to be extra careful who you vote. If someone seems suspicious they could be an imposter, but they might also just be the Jester!
+This adds a special twist to the usual dynamic of Among Us - you now have to be extra careful who you vote! If someone seems suspicious they could be an imposter, but they might also just be the Jester!
 
 ## How it works
 
