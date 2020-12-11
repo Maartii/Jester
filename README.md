@@ -1,34 +1,35 @@
 # Jester
-*Jester* is a plugin for the Among Us private server [Impostor](https://github.com/Impostor/Impostor) that adds a special **Jester role** to the game. At the start of each game, one player gets assigned this role. If this Jester gets **voted out** during a meeting they **win**, and all other players **lose**. 
+*Jester* is a plugin for the Among Us private server with the name [Impostor](https://github.com/Impostor/Impostor) that adds a new role to the game Among Us. The plugin will add a special **Jester role** to the game. The idea behind this Jester role is that if this Jester gets **voted out** during a meeting they **win**, and all other players **lose**. At the start of each game, one player will be assigned to this role. 
 
-This adds a special twist to the usual dynamic of Among Us - you now have to be extra careful who you vote. If someone seems suspicious they could be an imposter, but they might also just be the Jester!
+This adds a special twist to the usual dynamic of Among Us and you now have to be extra careful who you vote. Your very suspicious crewmate standing on a body is probably the imposter... unless the **Jester** is among us. 
 
 ## How it works
 
-- When the hosts pushes the 'start' button in the lobby, every player has to **open the ingame chat** to see if they're the Jester.
+- When the hosts clicks the 'start' button in the lobby, every player has to **open the ingame chat** to see whether they are the Jester.
 
   <details> 
   <summary><i>Screenshot</i></summary>
    <img src="https://github.com/Maartii/Jester/blob/main/Screenshots/JesterAnnouncement.png" width="500"> 
 </details>
 
-- If this player that gets this message happens to be Imposter, there will be *no Jester* this game.
-- But if this player is a crewmate, they will have the special Jester role this game!
-- The Jester is just like a normal crewmate, except for the fact that the Jester can also win on their own by getting voted out.
+- If a player that gets the 'Youre the Jester'-message happens to be Imposter, there will be *no Jester* that game.
+- If a player that gets the 'Youre the Jester'-message happens to be a crewmate, that player will have the special Jester role that game!
+- The Jester is also a crewmate and wins when the crewmates completed all their tasks (including the Jester).
+- The Jester has an additional win-condition: if the Jester get voted out, the Jester will win and all other players will lose.
 
   <details> 
   <summary><i>Screenshot of Jester victory</i></summary>
    <img src="https://github.com/Maartii/Jester/blob/main/Screenshots/JesterWin.png" width="500"> 
 </details>
 
-- After a game, all players get a notification saying which player was the Jester (and if they won).
+- After a game, all players receive a chat message telling them which player has been the Jester (and whether the Jester won that game).
 
   <details> 
   <summary><i>Screenshot</i></summary>
    <img src="https://github.com/Maartii/Jester/blob/main/Screenshots/AfterGame.png" width="500"> 
 </details>
 
-- While in lobby, the host can use the `/jester on` and `/jester off` commands to turn the jester role on and off. You can also write `/help` to get an explanation about the jester role.
+- In the Among Us lobby, the host can use the `/jester on` and `/jester off` commands in the chat to turn the jester role on and off. Addtionally, any player can write `/help` to get an explanation about the Jester role.
 
 ## Installation
 
