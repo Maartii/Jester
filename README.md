@@ -8,7 +8,7 @@ This adds a special twist to the usual dynamic of Among Us - you now have to be 
 - When the hosts pushes the 'start' button in the lobby, every player has to **open the ingame chat** to see if they're the Jester.
 
   <details> 
-  <summary><i>Click for screenshot</i></summary>
+  <summary><i>Screenshot</i></summary>
    <img src="https://github.com/Maartii/Jester/blob/main/Screenshots/JesterAnnouncement.png" width="500"> 
 </details>
 
