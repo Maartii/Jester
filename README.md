@@ -21,7 +21,7 @@ This adds a special twist to the usual dynamic of Among Us - you now have to be 
    <img src="https://github.com/Maartii/Jester/blob/main/Screenshots/JesterWin.png" width="500"> 
 </details>
 
-- After a game, all players get a notification saying who had the Jester role (and if they won).
+- After a game, all players get a notification saying which player was the Jester (and if they won).
 
   <details> 
   <summary><i>Screenshot</i></summary>
