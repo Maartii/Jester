@@ -8,7 +8,7 @@ This adds a special twist to the usual dynamic of Among Us and you now have to b
 - When the hosts clicks the 'start' button in the lobby, every player has to **open the ingame chat** to see whether they are the Jester.
 
   <details> 
-  <summary><i>Screenshot</i></summary>
+  <summary><i>Screenshot (click to open)</i></summary>
    <img src="https://github.com/Maartii/Jester/blob/main/Screenshots/JesterAnnouncement.png" width="500"> 
 </details>
 
@@ -18,14 +18,14 @@ This adds a special twist to the usual dynamic of Among Us and you now have to b
 - The Jester has an additional win-condition: if the Jester get voted out, the Jester will win and all other players will lose.
 
   <details> 
-  <summary><i>Screenshot of Jester victory</i></summary>
+  <summary><i>Screenshot of Jester victory (click to open)</i></summary>
    <img src="https://github.com/Maartii/Jester/blob/main/Screenshots/JesterWin.png" width="500"> 
 </details>
 
 - After a game, all players receive a chat message telling them which player has been the Jester (and whether the Jester won that game).
 
   <details> 
-  <summary><i>Screenshot</i></summary>
+  <summary><i>Screenshot (click to open)</i></summary>
    <img src="https://github.com/Maartii/Jester/blob/main/Screenshots/AfterGame.png" width="500"> 
 </details>
 
