@@ -6,6 +6,14 @@
 
 This adds a special twist to the usual dynamic of Among Us and you now have to be extra careful who you vote. Your very suspicious crewmate standing on a body is probably the imposter... unless the **Jester** is among us. 
 
+## Installation
+
+1. Set up an [Impostor server](https://github.com/Impostor/Impostor) by following the instructions on their Github page.
+2. Find the [latest release](https://github.com/Maartii/Jester/releases) of the plugin. 
+3. Drop the Jester.dll file in the `plugin` folder of your Impostor server.
+4. To play on your private server, see the instructions on the [Impostor](https://github.com/Impostor/Impostor) page.
+5. Don't forget to open chat before you start a game! :wink:
+
 ## How it works
 
 - When the hosts clicks the 'start' button in the lobby, every player has to **open the ingame chat** to see whether they could become the Jester. (If you miss this message or are unsure, you can always press the button when the game has started.)
@@ -27,14 +35,6 @@ This adds a special twist to the usual dynamic of Among Us and you now have to b
 </details>
 
 - In the Among Us lobby, the host can use the `/jester on` and `/jester off` commands in the chat to turn the jester role on and off. Additionally, any player can write `/help` to get an explanation about the Jester role.
-
-## Installation
-
-1. Set up an [Impostor server](https://github.com/Impostor/Impostor) by following the instructions on their Github page.
-2. Find the [latest release](https://github.com/Maartii/Jester/releases) of the plugin. 
-3. Drop the Jester.dll file in the `plugin` folder of your Impostor server.
-4. To play on your private server, see the instructions on the [Impostor](https://github.com/Impostor/Impostor) page.
-5. Don't forget to open chat before you start a game! :wink:
 
 ## Credits
 
