@@ -5,28 +5,22 @@ This adds a special twist to the usual dynamic of Among Us and you now have to b
 
 ## How it works
 
-- When the hosts clicks the 'start' button in the lobby, every player has to **open the ingame chat** to see whether they are the Jester.
+- When the hosts clicks the 'start' button in the lobby, every player has to **open the ingame chat** to see whether they could become the Jester. (If you miss this message or are unsure, you can always press the button when the game has started.)
 
   <details> 
   <summary><i>Screenshot (click to open)</i></summary>
    <img src="https://github.com/Maartii/Jester/blob/main/Screenshots/JesterAnnouncement.png" width="500"> 
 </details>
 
-- If a player that gets the "You're the Jester"-message happens to be Imposter, there will be *no Jester* that game.
-- If a player that gets the "You're the Jester"-message happens to be a crewmate, that player will have the special Jester role that game!
+- If a player that gets the *"You're the Jester"*-message happens to be *Imposter*, there will be *no Jester* that game.
+- If a player that gets the *"You're the Jester"*-message happens to be a crewmate, that player will have the **special Jester role** that game!
 - The Jester is also a crewmate and wins when the crewmates completed all their tasks (including the Jester).
-- The Jester has an additional win-condition: if the Jester get voted out, the Jester will win and all other players will lose.
+- The Jester has an **additional win-condition**: if the Jester gets **voted out**, the **Jester will win** and all other players will lose.
+- When the Jester wins, they are shown in the victory screen with a **Elf Hat**. The other players are shown with a **Dum-sticker** to make clear that they have lost.
 
   <details> 
-  <summary><i>Screenshot of Jester victory (click to open)</i></summary>
+  <summary><i>Screenshot of this special Jester victory screen (click to open)</i></summary>
    <img src="https://github.com/Maartii/Jester/blob/main/Screenshots/JesterWin.png" width="500"> 
-</details>
-
-- After a game, all players receive a chat message telling them which player has been the Jester (and whether the Jester won that game).
-
-  <details> 
-  <summary><i>Screenshot (click to open)</i></summary>
-   <img src="https://github.com/Maartii/Jester/blob/main/Screenshots/AfterGame.png" width="500"> 
 </details>
 
 - In the Among Us lobby, the host can use the `/jester on` and `/jester off` commands in the chat to turn the jester role on and off. Additionally, any player can write `/help` to get an explanation about the Jester role.
@@ -42,6 +36,7 @@ This adds a special twist to the usual dynamic of Among Us and you now have to b
 ## Credits
 
 - All the developers and contributors to the [Impostor](https://github.com/Impostor/Impostor) project.
+- My good friend Theo who helped writing this readme.
 - And a huge thanks to all of my friends who helped test this plugin! 
 
 ## Donate
