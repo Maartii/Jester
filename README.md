@@ -16,7 +16,7 @@ This adds a special twist to the usual dynamic of Among Us and you now have to b
 
 ## How it works
 
-- When the hosts clicks the 'start' button in the lobby, every player has to **open the ingame chat** to see whether they could become the Jester. (If you miss this message or are unsure, you can always press the button when the game has started.)
+- When the hosts clicks the 'start' button in the lobby, every player has to **open the ingame chat** to see whether they could become the Jester. (If you miss this message you can always press the emergency button later on.)
 
   <details> 
   <summary><i>Screenshot (click to open)</i></summary>
