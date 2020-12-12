@@ -36,7 +36,7 @@ This adds a special twist to the usual dynamic of Among Us and you now have to b
 ## Credits
 
 - All the developers and contributors to the [Impostor](https://github.com/Impostor/Impostor) project.
-- My good friend Theo who helped writing this readme.
+- My good friend Theo who helped writing the readme.
 - And a huge thanks to all of my friends who helped test this plugin! 
 
 ## Donate
