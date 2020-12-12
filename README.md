@@ -15,8 +15,8 @@ This adds a special twist to the usual dynamic of Among Us and you now have to b
    <img src="https://github.com/Maartii/Jester/blob/main/Screenshots/JesterAnnouncement.png" width="500"> 
 </details>
 
-- If a player that gets the *"You're the Jester"*-message happens to be *Imposter*, there will be *no Jester* that game.
-- If a player that gets the *"You're the Jester"*-message happens to be a crewmate, that player will have the **special Jester role** that game!
+- If a player that gets the *"You're the Jester"*-message happens to be **Imposter**, there will be **no Jester** that game.
+- If a player that gets the *"You're the Jester"*-message happens to be a **crewmate**, that player will have the **special Jester role** that game!
 - The Jester is also a crewmate and wins when the crewmates completed all their tasks (including the Jester).
 - The Jester has an **additional win-condition**: if the Jester gets **voted out**, the **Jester will win** and all other players will lose.
 - When the Jester wins, they are shown in the victory screen with a **Elf Hat**. The other players are shown with a **Dum-sticker** to make clear that they have lost.
