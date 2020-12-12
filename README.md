@@ -1,6 +1,6 @@
 # Jester
 
-<img align="right" src="https://github.com/Maartii/Jester/blob/main/Screenshots/MiniJester.png">
+<img align="right" src="https://github.com/Maartii/Jester/blob/main/Screenshots/MiniJesterBG.png">
 
 *Jester* is a plugin for the Among Us private server called [Impostor](https://github.com/Impostor/Impostor) that adds a new role to the game Among Us. The plugin will add a special **Jester role** to the game. The idea behind this Jester role is that if this Jester gets **voted out** during a meeting they **win**, and all other players **lose**. At the start of each game, one player will be assigned to this role. 
 
