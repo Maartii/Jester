@@ -16,11 +16,18 @@ This adds a special twist to the usual dynamic of Among Us and you now have to b
 
 ## How it works
 
-- When the hosts clicks the 'start' button in the lobby, every player has to **open the ingame chat** to see whether they could become the Jester. (If you miss this message you can always press the emergency button later on.)
+- When the hosts clicks the 'start' button in the lobby, every player has to **open the ingame chat** to see whether they could become the Jester. 
 
   <details> 
   <summary><i>Screenshot (click to open)</i></summary>
    <img src="https://github.com/Maartii/Jester/blob/main/Screenshots/JesterAnnouncement.png" width="500"> 
+</details>
+
+- You will also get a confirmation message during the first meeting. So if you're unsure if you're Jester you can always press the emergency button.
+
+  <details> 
+  <summary><i>Screenshot (click to open)</i></summary>
+   <img src="https://github.com/Maartii/Jester/blob/main/Screenshots/JesterConfirmation.png" width="500"> 
 </details>
 
 - If a player that gets the *"You're the Jester"*-message happens to be Imposter, there will be no Jester that game.
