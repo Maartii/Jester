@@ -25,7 +25,7 @@ This adds a special twist to the usual dynamic of Among Us and you now have to b
 
 - If a player that gets the *"You're the Jester"*-message happens to be Imposter, there will be no Jester that game.
 - If a player that gets the *"You're the Jester"*-message happens to be a **crewmate**, that player will have the **special Jester role** that game!
-- You will also get a confirmation message during the first meeting. So if you're unsure if you're Jester you can always press the emergency button.
+- You will also get a confirmation message during the first meeting. So if you're unsure whether you're Jester you can always press the emergency button.
 
   <details> 
   <summary><i>Screenshot of confirmation message (click to open)</i></summary>
