@@ -14,7 +14,7 @@ This adds a special twist to the usual dynamic of Among Us and you now have to b
 4. To play with your client on your private server, see the instructions on the [Impostor](https://github.com/Impostor/Impostor) page.
 5. Don't forget to open chat before you start a game! :wink:
 
-**Note: Currently it's not possible to play with the Jester in more than one lobby at the same time (on the same private server). Will add support for that soon!**
+**Note: It's currently not possible to play with the Jester in more than one lobby at the same time (on the same private server). Will add support for that soon!**
 
 ## How it works
 
