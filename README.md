@@ -14,8 +14,6 @@ This adds a special twist to the usual dynamic of Among Us and you now have to b
 4. To play with your client on your private server, see the instructions on the [Impostor](https://github.com/Impostor/Impostor) page.
 5. Don't forget to open chat before you start a game! :wink:
 
-**Note: It's currently not possible to play with the Jester in more than one lobby at the same time (on the same private server). Will add support for that soon!**
-
 ## How it works
 
 - When the hosts clicks the 'start' button in the lobby, every player has to **open the ingame chat** to see whether they could become the Jester. 
