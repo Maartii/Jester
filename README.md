@@ -43,7 +43,7 @@ This adds a special twist to the usual dynamic of Among Us and you now have to b
    <img src="https://github.com/Maartii/Jester/blob/main/Screenshots/JesterWin.png" width="500"> 
 </details>
 
-- In the Among Us lobby, the host can use the `/jester on` and `/jester off` commands in the chat to turn the jester role on and off. Additionally, any player can write `/help` to get an explanation about the Jester role.
+- In the Among Us lobby, the host can use the `/jester on` and `/jester off` commands in the chat to turn the jester role on and off. Additionally, any player can write `/jester help` to get an explanation about the Jester role.
 
 ## Credits
 
