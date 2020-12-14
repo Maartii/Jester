@@ -260,15 +260,15 @@ namespace Impostor.Plugins.Example.Handlers
                         await ServerSendChatAsync("You need to be host to change roles.", e.PlayerControl).ConfigureAwait(false);
                     }
                     break;
-                case "/h":
-                case "/help":
+                case "/j help":
+                case "/jester help":
                     await ServerSendChatAsync("When the special Jester role is on, one crewmate is Jester.", e.PlayerControl).ConfigureAwait(false);  
                     await ServerSendChatAsync("In addition to the ways in which a normal crewmate can win, the Jester can win by getting voted out.", e.PlayerControl).ConfigureAwait(false);
                     await ServerSendChatAsync("If this happens all the other players lose, so be careful who you vote during meetings!", e.PlayerControl).ConfigureAwait(false);
                     await ServerSendChatAsync("The host can turn the Jester role on and off by typing '/jester on' or '/jester off'.", e.PlayerControl).ConfigureAwait(false);
                     break;
                 default:
-                    await ServerSendChatAsync("Error. Possible commands are '/help', '/jester on', '/jester off'.", e.PlayerControl).ConfigureAwait(false);  
+                    await ServerSendChatAsync("Error. Possible commands are '/jester help', '/jester on', '/jester off'.", e.PlayerControl).ConfigureAwait(false);  
                     break;                                     
             }
         }
