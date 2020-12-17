@@ -27,7 +27,7 @@ namespace Impostor.Plugins.Example.Handlers
 
         struct JesterGame
         {
-            public IClientPlayer Jester;
+            public int JesterClientId;
             public bool JesterOn;
             public bool Jesterwin;
             public bool GameEnded;
@@ -109,12 +109,12 @@ namespace Impostor.Plugins.Example.Handlers
             int r = rnd.Next(gameplayers.Count);
 
             JesterGame jgame = JesterGames[e.Game.Code];
-            jgame.Jester = gameplayers[r];
+            jgame.JesterClientId = gameplayers[r].Client.Id;
             jgame.Jestername = gameplayers[r].Character.PlayerInfo.PlayerName;
             JesterGames[e.Game.Code] = jgame;
 
             await ServerSendChatToPlayerAsync($"You're the JESTER! (unless you'll be an imposter)", gameplayers[r].Character).ConfigureAwait(false);
-            _logger.LogInformation($"- {gameplayers[r].Character.PlayerInfo.PlayerName} is probably the jester.");    
+            _logger.LogInformation($"- {JesterGames[e.Game.Code].Jestername} is probably the jester.");    
         }
 
         private async Task MakePlayerLookAtChat(IClientPlayer player)
@@ -125,6 +125,39 @@ namespace Impostor.Plugins.Example.Handlers
             await Task.Delay(TimeSpan.FromSeconds(3)).ConfigureAwait(false);
             await player.Character.SetNameAsync(playername).ConfigureAwait(false);
         }
+
+        [EventListener]
+        public void OnGamePlayerJoined(IGamePlayerJoinedEvent e)
+        {
+            if (JesterGames[e.Game.Code].CountingDown)
+            {
+                _logger.LogInformation($"Assigning Jester interrupted. {JesterGames[e.Game.Code].Jestername} is NOT the jester.");
+                Task.Run(async () => await SorryNotJester(e.Game.GetClientPlayer(JesterGames[e.Game.Code].JesterClientId)).ConfigureAwait(false));
+
+                JesterGame jgame = JesterGames[e.Game.Code];
+                jgame.CountingDown = false;
+                JesterGames[e.Game.Code] = jgame;
+            }
+        }
+
+        [EventListener]
+        public void OnGamePlayerLeft(IGamePlayerLeftEvent e)
+        {
+            if (JesterGames[e.Game.Code].CountingDown)
+            {
+                _logger.LogInformation($"Assigning Jester interrupted. {JesterGames[e.Game.Code].Jestername} is NOT the jester.");
+                Task.Run(async () => await SorryNotJester(e.Game.GetClientPlayer(JesterGames[e.Game.Code].JesterClientId)).ConfigureAwait(false));
+
+                JesterGame jgame = JesterGames[e.Game.Code];
+                jgame.CountingDown = false;
+                JesterGames[e.Game.Code] = jgame;
+            }
+        }
+
+        private async Task SorryNotJester(IClientPlayer player)
+        {
+            await ServerSendChatToPlayerAsync($"Startup interrupted. You're NOT the Jester.", player.Character).ConfigureAwait(false);
+        }        
 
         [EventListener]
         public void OnGameStarted(IGameStartedEvent e)
@@ -163,15 +196,15 @@ namespace Impostor.Plugins.Example.Handlers
 
         private async Task InformJester(IGameStartedEvent e)
         {
-            if (JesterGames[e.Game.Code].Jester.Character.PlayerInfo.IsImpostor)
+            if (e.Game.GetClientPlayer(JesterGames[e.Game.Code].JesterClientId).Character.PlayerInfo.IsImpostor)
             {
-                _logger.LogInformation($"- {JesterGames[e.Game.Code].Jester.Character.PlayerInfo.PlayerName} isn't jester but impostor.");
-                await ServerSendChatToPlayerAsync($"You happen to be IMPOSTER! No Jester this game.", JesterGames[e.Game.Code].Jester.Character).ConfigureAwait(false);
+                _logger.LogInformation($"- {e.Game.GetClientPlayer(JesterGames[e.Game.Code].JesterClientId).Character.PlayerInfo.PlayerName} isn't jester but impostor.");
+                await ServerSendChatToPlayerAsync($"You happen to be IMPOSTER! No Jester this game.", e.Game.GetClientPlayer(JesterGames[e.Game.Code].JesterClientId).Character).ConfigureAwait(false);
             }
             else
             {
-                _logger.LogInformation($"- {JesterGames[e.Game.Code].Jester.Character.PlayerInfo.PlayerName} is indeed jester.");
-                await ServerSendChatToPlayerAsync($"You're indeed the JESTER!", JesterGames[e.Game.Code].Jester.Character).ConfigureAwait(false);
+                _logger.LogInformation($"- {e.Game.GetClientPlayer(JesterGames[e.Game.Code].JesterClientId).Character.PlayerInfo.PlayerName} is indeed jester.");
+                await ServerSendChatToPlayerAsync($"You're indeed the JESTER!", e.Game.GetClientPlayer(JesterGames[e.Game.Code].JesterClientId).Character).ConfigureAwait(false);
 
                 JesterGame jgame = JesterGames[e.Game.Code];
                 jgame.JesterInGame = true;
@@ -187,7 +220,7 @@ namespace Impostor.Plugins.Example.Handlers
         [EventListener]
         public void OnPlayerExiled(IPlayerExileEvent e)
         {
-            if (JesterGames[e.Game.Code].JesterInGame && e.PlayerControl == JesterGames[e.Game.Code].Jester.Character)
+            if (JesterGames[e.Game.Code].JesterInGame && e.PlayerControl == e.Game.GetClientPlayer(JesterGames[e.Game.Code].JesterClientId).Character)
             {                                
                 JesterGame jgame = JesterGames[e.Game.Code];
                 jgame.Jesterwin = true;
@@ -200,10 +233,10 @@ namespace Impostor.Plugins.Example.Handlers
 
         private async Task TurnTheTables(IPlayerExileEvent e)
         {
-            await JesterGames[e.Game.Code].Jester.Character.SetHatAsync(HatType.ElfHat).ConfigureAwait(false);
+            await e.Game.GetClientPlayer(JesterGames[e.Game.Code].JesterClientId).Character.SetHatAsync(HatType.ElfHat).ConfigureAwait(false);
             foreach (var player in e.Game.Players)
             {
-                if (player != JesterGames[e.Game.Code].Jester)
+                if (player.Client.Id != JesterGames[e.Game.Code].JesterClientId)
                 {
                     await player.Character.SetHatAsync(HatType.DumSticker).ConfigureAwait(false);
                 }
@@ -213,7 +246,7 @@ namespace Impostor.Plugins.Example.Handlers
                 if (!player.Character.PlayerInfo.IsDead && player.Character.PlayerInfo.IsImpostor)
                 {
                     _logger.LogInformation($"- {player.Character.PlayerInfo.PlayerName} is murdered by plugin.");
-                    await player.Character.SetMurderedAsync().ConfigureAwait(false);                              
+                    await player.Character.SetMurderedByAsync(player);                          
                 }
             }
                       
@@ -250,6 +283,12 @@ namespace Impostor.Plugins.Example.Handlers
                 await Task.Delay(TimeSpan.FromSeconds(5)).ConfigureAwait(false);
                 await ServerSendChatToPlayerAsync($"{JesterGames[e.Game.Code].Jestername} was Jester, but didn't get voted out.", e.PlayerControl).ConfigureAwait(false);                
             }
+        }
+
+        [EventListener]
+        public void OnGameDestroyed(IGameDestroyedEvent e)
+        {
+            JesterGames.Remove(e.Game.Code);
         }
 
         [EventListener]

@@ -38,7 +38,7 @@
           "dependencies": {
             "Impostor.Api": {
               "target": "Package",
-              "version": "[1.2.2-ci.116, )"
+              "version": "[1.2.2-ci.121, )"
             }
           },
           "imports": [

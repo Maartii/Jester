@@ -2,7 +2,7 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.1": {
-      "Impostor.Api/1.2.2-ci.116": {
+      "Impostor.Api/1.2.2-ci.121": {
         "type": "package",
         "dependencies": {
           "Microsoft.Bcl.HashCode": "1.1.0",
@@ -139,14 +139,14 @@
     }
   },
   "libraries": {
-    "Impostor.Api/1.2.2-ci.116": {
-      "sha512": "L45pnutYrECEfHUfMytw/4DA8xXgUx59H5MqUPQ/fSKvvk8TUITN+julfsit5aQmlJZtq3BH4EWZGRj7f0JzcA==",
+    "Impostor.Api/1.2.2-ci.121": {
+      "sha512": "umYs6icWxudu5MQEnb4XpSEXKSoznTje/p2YBRGfHAH+eq0KDKTlV9C1eRVyiDJN4q1Rip9RNubYe1W+qvjkeg==",
       "type": "package",
-      "path": "impostor.api/1.2.2-ci.116",
+      "path": "impostor.api/1.2.2-ci.121",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "impostor.api.1.2.2-ci.116.nupkg.sha512",
+        "impostor.api.1.2.2-ci.121.nupkg.sha512",
         "impostor.api.nuspec",
         "lib/netstandard2.0/Impostor.Api.dll"
       ]
@@ -434,7 +434,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.1": [
-      "Impostor.Api >= 1.2.2-ci.116"
+      "Impostor.Api >= 1.2.2-ci.121"
     ]
   },
   "packageFolders": {
@@ -474,7 +474,7 @@
         "dependencies": {
           "Impostor.Api": {
             "target": "Package",
-            "version": "[1.2.2-ci.116, )"
+            "version": "[1.2.2-ci.121, )"
           }
         },
         "imports": [

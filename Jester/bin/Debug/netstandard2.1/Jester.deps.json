@@ -9,13 +9,13 @@
     ".NETStandard,Version=v2.1/": {
       "Jester/1.0.0": {
         "dependencies": {
-          "Impostor.Api": "1.2.2-ci.116"
+          "Impostor.Api": "1.2.2-ci.121"
         },
         "runtime": {
           "Jester.dll": {}
         }
       },
-      "Impostor.Api/1.2.2-ci.116": {
+      "Impostor.Api/1.2.2-ci.121": {
         "dependencies": {
           "Microsoft.Bcl.HashCode": "1.1.0",
           "Microsoft.Extensions.Hosting.Abstractions": "5.0.0",
@@ -145,12 +145,12 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Impostor.Api/1.2.2-ci.116": {
+    "Impostor.Api/1.2.2-ci.121": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-L45pnutYrECEfHUfMytw/4DA8xXgUx59H5MqUPQ/fSKvvk8TUITN+julfsit5aQmlJZtq3BH4EWZGRj7f0JzcA==",
-      "path": "impostor.api/1.2.2-ci.116",
-      "hashPath": "impostor.api.1.2.2-ci.116.nupkg.sha512"
+      "sha512": "sha512-umYs6icWxudu5MQEnb4XpSEXKSoznTje/p2YBRGfHAH+eq0KDKTlV9C1eRVyiDJN4q1Rip9RNubYe1W+qvjkeg==",
+      "path": "impostor.api/1.2.2-ci.121",
+      "hashPath": "impostor.api.1.2.2-ci.121.nupkg.sha512"
     },
     "Microsoft.Bcl.HashCode/1.1.0": {
       "type": "package",
