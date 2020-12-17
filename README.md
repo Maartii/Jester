@@ -8,7 +8,7 @@ This adds a special twist to the usual dynamic of Among Us and you now have to b
 
 ## Installation
 
-1. Set up an [Impostor server](https://github.com/Impostor/Impostor) by following the instructions on their Github page.
+1. Set up an [Impostor server](https://github.com/Impostor/Impostor) by following the instructions on their Github page. **For now, please use the latest [experimental build](https://ci.appveyor.com/project/Impostor/Impostor/branch/dev/artifacts).**
 2. Find the [latest release](https://github.com/Maartii/Jester/releases) of the plugin. 
 3. Drop the Jester.dll file in the `plugin` folder of your Impostor server.
 4. To play with your client on your private server, see the instructions on the [Impostor](https://github.com/Impostor/Impostor) page.
