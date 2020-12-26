@@ -102,18 +102,24 @@ namespace Impostor.Plugins.Example.Handlers
         private async Task AssignJester(IPlayerSetStartCounterEvent e)
         {
             List<IClientPlayer> gameplayers = new List<IClientPlayer>();
+            List<IClientPlayer> crewmates = new List<IClientPlayer>();
             foreach (var player in e.Game.Players)
             {
                 gameplayers.Add(player);
+                if (player.Character.PlayerInfo.IsImpostor == false)
+                {
+                    crewmates.Add(player);
+                }
             }
-            int r = rnd.Next(gameplayers.Count);
+            int r = rnd.Next(crewmates.Count);
+            
 
             JesterGame jgame = JesterGames[e.Game.Code];
-            jgame.JesterClientId = gameplayers[r].Client.Id;
-            jgame.Jestername = gameplayers[r].Character.PlayerInfo.PlayerName;
+            jgame.JesterClientId = crewmates[r].Client.Id;
+            jgame.Jestername = crewmates[r].Character.PlayerInfo.PlayerName;
             JesterGames[e.Game.Code] = jgame;
 
-            await ServerSendChatToPlayerAsync($"You're the JESTER! (unless you'll be an imposter)", gameplayers[r].Character).ConfigureAwait(false);
+            await ServerSendChatToPlayerAsync($"You're the JESTER! (unless you'll be an imposter)", crewmates[r].Character).ConfigureAwait(false);
             _logger.LogInformation($"- {JesterGames[e.Game.Code].Jestername} is probably the jester.");    
         }
 
