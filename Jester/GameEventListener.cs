@@ -108,7 +108,7 @@ namespace Impostor.Plugins.Example.Handlers
                 gameplayers.Add(player);
                 if (player.Character.PlayerInfo.IsImpostor == false)
                 {
-                    crewmates.add(player);
+                    crewmates.Add(player);
                 }
             }
             int r = rnd.Next(crewmates.Count);
