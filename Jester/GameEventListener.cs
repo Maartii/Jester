@@ -212,7 +212,7 @@ namespace Impostor.Plugins.Example.Handlers
             if (e.Game.GetClientPlayer(JesterGames[e.Game.Code].JesterClientId).Character.PlayerInfo.IsImpostor)
             {
                 _logger.LogInformation($"- {e.Game.GetClientPlayer(JesterGames[e.Game.Code].JesterClientId).Character.PlayerInfo.PlayerName} isn't jester but impostor.");
-                await ServerSendChatToPlayerAsync($"You happen to be IMPOSTER! No Jester this game.", e.Game.GetClientPlayer(JesterGames[e.Game.Code].JesterClientId).Character).ConfigureAwait(false);
+                _ = ServerSendChatToPlayerAsync($"You happen to be IMPOSTER! No Jester this game.", e.Game.GetClientPlayer(JesterGames[e.Game.Code].JesterClientId).Character).ConfigureAwait(false);
 
                 JesterGame jgame = JesterGames[e.Game.Code];
                 jgame.JesterImp = true;
@@ -221,7 +221,7 @@ namespace Impostor.Plugins.Example.Handlers
             else
             {
                 _logger.LogInformation($"- {e.Game.GetClientPlayer(JesterGames[e.Game.Code].JesterClientId).Character.PlayerInfo.PlayerName} is indeed jester.");
-                await ServerSendChatToPlayerAsync($"You're indeed the JESTER!", e.Game.GetClientPlayer(JesterGames[e.Game.Code].JesterClientId).Character).ConfigureAwait(false);
+                _ = ServerSendChatToPlayerAsync($"You're indeed the JESTER!", e.Game.GetClientPlayer(JesterGames[e.Game.Code].JesterClientId).Character).ConfigureAwait(false);
 
                 JesterGame jgame = JesterGames[e.Game.Code];
                 jgame.JesterInGame = true;
