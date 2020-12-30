@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Users\\John\\Source\\Repos\\Jester\\Jester\\Jester.csproj": {}
+    "D:\\Users\\John\\source\\repos\\Jester\\Jester\\Jester.csproj": {}
   },
   "projects": {
-    "D:\\Users\\John\\Source\\Repos\\Jester\\Jester\\Jester.csproj": {
+    "D:\\Users\\John\\source\\repos\\Jester\\Jester\\Jester.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Users\\John\\Source\\Repos\\Jester\\Jester\\Jester.csproj",
+        "projectUniqueName": "D:\\Users\\John\\source\\repos\\Jester\\Jester\\Jester.csproj",
         "projectName": "Jester",
-        "projectPath": "D:\\Users\\John\\Source\\Repos\\Jester\\Jester\\Jester.csproj",
+        "projectPath": "D:\\Users\\John\\source\\repos\\Jester\\Jester\\Jester.csproj",
         "packagesPath": "D:\\Users\\John\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\John\\Source\\Repos\\Jester\\Jester\\obj\\",
+        "outputPath": "D:\\Users\\John\\source\\repos\\Jester\\Jester\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

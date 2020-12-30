@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "M+F0kUFCPRoNXbGeye3a2U2mtA+Jnb5lEc5sLlIADNLyB+P/ReKdbnKQpqiSsaKzknlMedwigLrF4YEpt+zYMg==",
+  "dgSpecHash": "On20/lO7RTHHLJYH9YbPr7nuImVq9x7Mt/KMoLYYB3WzfbwtQE3f3mS5yT1Q7BV7BC3qQvXVfRWCPC4hIVqp4A==",
   "success": true,
-  "projectFilePath": "D:\\Users\\John\\Source\\Repos\\Jester\\Jester\\Jester.csproj",
+  "projectFilePath": "D:\\Users\\John\\source\\repos\\Jester\\Jester\\Jester.csproj",
   "expectedPackageFiles": [
     "D:\\Users\\John\\.nuget\\packages\\impostor.api\\1.2.2-ci.121\\impostor.api.1.2.2-ci.121.nupkg.sha512",
     "D:\\Users\\John\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
