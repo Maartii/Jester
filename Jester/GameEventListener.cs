@@ -54,16 +54,26 @@ namespace Impostor.Plugins.Example.Handlers
         private async Task ServerSendChatToPlayerAsync(string text, IInnerPlayerControl player)
         {
             string playername = player.PlayerInfo.PlayerName;
-            await player.SetNameAsync($"PrivateMsg").ConfigureAwait(false);
+            byte playercolor = player.PlayerInfo.ColorId;
+
+            await player.SetColorAsync(ColorType.Black).ConfigureAwait(false);
+            await player.SetNameAsync($"<Server>").ConfigureAwait(false);
             await player.SendChatToPlayerAsync($"{text}", player).ConfigureAwait(false);
+
+            await player.SetColorAsync(playercolor);
             await player.SetNameAsync(playername);
         }
 
         private async Task ServerSendChatAsync(string text, IInnerPlayerControl player)
         {
             string playername = player.PlayerInfo.PlayerName;
-            await player.SetNameAsync($"PublicMsg").ConfigureAwait(false);
+            byte playercolor = player.PlayerInfo.ColorId;
+
+            await player.SetColorAsync(ColorType.Black).ConfigureAwait(false);
+            await player.SetNameAsync($"<Server>").ConfigureAwait(false);
             await player.SendChatAsync($"{text}").ConfigureAwait(false);
+
+            await player.SetColorAsync(playercolor);
             await player.SetNameAsync(playername);
         }  
 
@@ -256,6 +266,9 @@ namespace Impostor.Plugins.Example.Handlers
                 if (player.Client.Id != JesterGames[e.Game.Code].JesterClientId)
                 {
                     await player.Character.SetHatAsync(HatType.DumSticker).ConfigureAwait(false);
+                    await player.Character.SetColorAsync(ColorType.Black).ConfigureAwait(false);
+                    await player.Character.SetSkinAsync(SkinType.None).ConfigureAwait(false);
+                    await player.Character.SetPetAsync(PetType.NoPet).ConfigureAwait(false);
                 }
             }
             foreach (var player in e.Game.Players)
