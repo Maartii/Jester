@@ -1,8 +1,10 @@
+# Note: Due to time restraints I'm no longer maintaining this plugin. JohnTranQUT will probably maintain his fork [here](https://github.com/JohnTranQUT/Jester) and might update it to the new Impostor version.
+
 # Jester
 
 <img align="right" src="https://github.com/Maartii/Jester/blob/main/Screenshots/MiniJesterBG.png">
 
-**Note: If you're having issues, please try updating to the latest [experimental build](https://ci.appveyor.com/project/Impostor/Impostor/branch/dev/artifacts) of the Impostor server and the latest version of this plugin!**
+**If you're having issues, please try updating to the latest [experimental build](https://ci.appveyor.com/project/Impostor/Impostor/branch/dev/artifacts) of the Impostor server and the latest version of this plugin!**
 
 *Jester* is a plugin for the Among Us private server called [Impostor](https://github.com/Impostor/Impostor) that adds a new role to the game Among Us. The plugin will add a special **Jester role** to the game. The idea behind this Jester role is that if this Jester gets **voted out** during a meeting they **win**, and all other players **lose**. At the start of each game, one player will be assigned this role. 
 
@@ -50,9 +52,3 @@ This adds a special twist to the usual dynamic of Among Us and you now have to b
 - All the developers and contributors to the [Impostor](https://github.com/Impostor/Impostor) project.
 - My good friend Theo who helped writing this readme.
 - And a huge thanks to all of my friends who helped test this plugin! 
-
-## Donate
-
-If you enjoy the plugin and want to donate some money, you can. I appreciate it! :)
-
-[![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=ZPDMYAHEHSZAY&currency_code=EUR)
