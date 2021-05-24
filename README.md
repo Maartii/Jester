@@ -1,4 +1,5 @@
-# Note: Due to time restraints I'm no longer maintaining this plugin. JohnTranQUT will probably maintain his fork [here](https://github.com/JohnTranQUT/Jester) and might update it to the new Impostor version.
+# Note: 
+## Due to time restraints I'm no longer maintaining this plugin. JohnTranQUT will probably maintain his fork [here](https://github.com/JohnTranQUT/Jester) and might update it to the new Impostor version.
 
 # Jester
 
