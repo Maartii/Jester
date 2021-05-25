@@ -190,7 +190,7 @@ namespace Impostor.Plugins.Example.Handlers
             // This prints out for all players if they are impostor or crewmate.
             foreach (var player in e.Game.Players)
             {
-                if (JesterGames[e.Game.Code].JesterOn && (player.Character.PlayerInfo.HatId == 27 || player.Character.PlayerInfo.HatId == 84))
+                if (JesterGames[e.Game.Code].JesterOn && (player.Character.PlayerInfo.Hat == HatType.ElfHat || player.Character.PlayerInfo.Hat == HatType.DumSticker))
                 {
                     Task.Run(async () => await OffWithYourHat(player).ConfigureAwait(false));
                 }                
@@ -263,7 +263,7 @@ namespace Impostor.Plugins.Example.Handlers
                 if (!player.Character.PlayerInfo.IsDead && player.Character.PlayerInfo.IsImpostor)
                 {
                     _logger.LogInformation($"- {player.Character.PlayerInfo.PlayerName} is murdered by plugin.");
-                    await player.Character.SetMurderedByAsync(player);                          
+                    await player.Character.MurderPlayerAsync(player.Character);
                 }
             }
                       
